@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KP GLOBAL CONSULTANT</title> 
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/fav-icon/apple-icon.png">
+    <link rel="icon" type="image/png" href="images/fav-icon/android-icon-36x36.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/fav-icon/android-icon-36x36.png" sizes="16x16">
+
+</head>
+<body>
+
+<div class="boxed_wrapper">
+
+<header class="top-bar">
+    
+</header>
+
+<section class="theme_menu stricky main-header">
+    
+</section>
+
+<style>
+    
+    
+    .slider-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  padding:0;
+  margin: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider.active {
+  opacity: 1;
+}
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+}
+
+.slider-heading {
+  color: #ffffff;
+  font-size: 55px;
+  line-height: 62px;
+  margin: 14px 0 9px;
+  font-weight: 700;
+  text-transform:uppercase;
+}
+
+.slider-paragraph {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  margin: 0 0 30px;
+   text-transform:uppercase;
+}
+
+@media screen and (max-width:768px){
+    .slider-heading {
+        font-size:40px;
+    }
+    .slider-paragraph {
+  font-size: 16px;
+        
+    }
+}
+
+.slide-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  transition: opacity 0.5s ease-in-out;
+   /* Add overlay */
+   overflow: hidden;
+}
+
+.slide-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity as desired */
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+.slider-navigation {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+}
+
+
+.slider-button {
+    font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  padding: 1.5rem 3rem;
+  background-color: transparent;
+  color: #ffffff;
+  border:2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out,color 0.2s ease-in-out;
+  
+}
+
+
+.slider-button-prev {
+  margin-right: 10px;
+  position: absolute;
+  left: 2%;
+  opacity:0.5;
+  transition:opacity 0.3s ease-in;
+  padding: 0.8rem 1.5rem;
+}
+
+.slider-button-prev:hover {opacity:1;}
+
+.slider-button-next {
+  margin-left: 10px;
+  position: absolute;
+  right: 2%;
+  opacity:0.5;
+    padding: 0.8rem 1.5rem;
+
+}
+
+.slider-button-next:hover {opacity:1;}
+
+
+.slider-button:hover {
+  background-color: white;
+  color:black;
+}
+
+@media screen and (max-width:768px){
+    .slider-button-next, .slider-button-prev {
+        display:none;
+    }
+}
+</style>
+
+<div class="slider-container">
+  
+    <div class="slider">
+      <div class="slide-content">
+        <h1 class="slider-heading">KP Global Consultants </h1>
+        <p class="slider-paragraph">Offshore accounting / advisory services</p>
+        <button class="slider-button" onclick= 'window.location.href="http://kpglobalconsultants.com/kp/about.html"'>Learn More</button>
+      </div>
+      <div class="slide-image" style="background-image: url(images/slider/s3.jpg);"></div>
+    </div>
+    <div class="slider">
+      <div class="slide-content">
+        <h1 class="slider-heading">KP Global Consultants </h1>
+        <p class="slider-paragraph">Offshore accounting / advisory services</p>
+        <button class="slider-button" onclick= 'window.location.href="http://kpglobalconsultants.com/kp/about.html"'>Learn More</button>
+      </div>
+      <div class="slide-image" style="background-image: url(images/slider/s1.jpg);"></div>
+    </div>
+    <div class="slider">
+      <div class="slide-content">
+        <h1 class="slider-heading">KP Global Consultants </h1>
+        <p class="slider-paragraph">Offshore accounting / advisory services</p>
+        <button class="slider-button" onclick= 'window.location.href="http://kpglobalconsultants.com/kp/about.html"'>Learn More</button>
+      </div>
+      <div class="slide-image" style="background-image: url(images/slider/s2.jpg);"></div>
+    </div>
+    <div class="slider-navigation">
+      <button class="slider-button slider-button-prev" onclick="prevSlide()">&lt;</button>
+      <button class="slider-button slider-button-next" onclick="nextSlide()">&gt;</button>
+    </div>
+  </div>
+  
+  
+  <section class="default-section sec-padd">
+    <div class="container">
+        <div class="row aboutus-sec">
+             <div class="box">
+            <h1>How Can We Contribute?</h1>
+        </div><!-- /.box -->
+        </div>
+        <div class="row aboutus-sec">
+            
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="text-content">
+                    <h4>We have a team of experts with diverse skills and experience in various fields, including:</h4>
+                    
+                    <ul class="default-list">
+                        <li><i class="fa fa-check-square-o"></i>IFRS implementation and modeling (IFRS Yechnical Advisory) </li>
+                        <li><i class="fa fa-check-square-o"></i>Offshore Audit Support Services</li>
+                        <li><i class="fa fa-check-square-o"></i>Financial reporting (IFRS, IFRS for SMEs) (Offshore Accounting Services)</li>
+                        <li><i class="fa fa-check-square-o"></i>Internal audit services</li>
+                        <li><i class="fa fa-check-square-o"></i>Other advisory and consultancies (Budgeting, Forecasting And Feasibility Studies)</li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <figure class="img-box">
+                    <a href="#"><img src="images/about/kpabout.jpeg" alt=""></a>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+  
+
+<section class="whychoos-us sec-padd2">
+    <div class="container">
+        
+        <div class="section-title center">
+            <h2>Why Choosing The Expeart</h2>
+            <div class="text">
+                <p>We are experts in this industry with over 100 years experience. What that means is you are going to get right <br> solution. please find our services.</p>
+            </div>
+        </div>
+            
+        
+        <div class="row clearfix " id="services-sec">
+           
+        </div>
+        <div class="row clearfix " style="display:flex;justify-content:center">
+ <button class="slider-button" onclick= 'window.location.href="http://kpglobalconsultants.com/kp/IFRS-Technical-Advisory.html"' style="color:#0e90d8; border:2px solid #0e90d8;">See More Services</button>
+ </div>
+            
+            
+        <script>
+            // Define the section data
+const sectionsData = [
+  {
+    heading: 'IFRS Technical Advisory',
+    paragraph: 'With the rapid growth of global corporations and business transactions, introducing and following accounting standards is becoming increasingly important.',
+    count: '01',
+    iconClass: 'KPK Icons-01.png',
+    link:"IFRS-Technical-Advisory.html"
+  },
+  // Add more section data as needed
+  {
+    heading: 'Offshore Audit Support Services',
+    paragraph: 'Looking to expand your clientele and maintain high-quality audit services, but facing challenges such as strict deadlines and higher costs associated with hiring..',
+    count: '02',
+    iconClass: 'KPK Icons-02.png',
+    link:"Offshore-Audit-Support-Services.html"
+  },
+  {
+    heading: 'Offshore Accounting Services',
+    paragraph: 'Outsourcing accounting services can be an effective and affordable option for companies seeking professional accounting management.At times, even accounting staff..',
+    count: '03',
+    iconClass: 'KPK Icons-03.png',
+    link:"Offshore-Accounting-Services.html"
+  },
+  
+];
+
+// Get the container element where the sections will be added
+const container = document.getElementById('services-sec');
+
+// Create sections dynamically
+sectionsData.forEach((data, index) => {
+  const columnClass = (index > 2) ? 'col-md-6' : 'col-md-4';
+  // Generate the HTML markup for the section
+  const sectionMarkup = `
+    <article class="column ${columnClass} col-sm-6 col-xs-12">
+      <div class="item">
+        <div class="icon_box" style="margin-bottom:2rem;">
+          <img src="images/icons/${data.iconClass}" width="30%" />
+        </div>
+        <a href="${data.link}"><h4>${data.heading}</h4></a>
+        <div class="text">
+          <p>${data.paragraph}</p>
+        </div>
+        <div class="count">${data.count}</div>
+      </div>
+    </article>
+  `;
+
+  // Insert the section markup into the container
+  container.innerHTML += sectionMarkup;
+});
+
+
+        </script>
+        
+    </div>
+</section>
+
+
+
+           
+
+<footer class="main-footer">
+    
+   <!-- 
+    <div class="widgets-section">
+        <div class="container">
+            <div class="row">
+            
+             <div class="footer-column col-md-3 col-sm-12" style="display:flex;flex-direction:column;align-items:center;">
+                <figure class="logo" style="text-align:center">
+                    <a href="index.html"><img src="images/logo/logo.png" alt=""></a>
+                </figure>
+            
+                <h5 style="margin-block:2rem; text-align:center;">Over 20 years of experience we’ll ensure you get the best guidance.</h5>
+                <a href="contact.html" class="thm-btn-tr">Request Quote</a>
+            </div>
+        
+                <div class="footer-column col-md-3 col-sm-12 col-xs-12">
+                            <div class="footer-widget about-widget">
+                                <h3 class="footer-title">About Us</h3>
+                                
+                                <div class="widget-content">
+                                    <div class="text"><p>The Experts consulting over 20 years of experience we’ll ensure you always get the best guidance. We serve a clients at every level of their organization, in whatever capacity we can be most useful, whether as a trusted advisor.</p> </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        
+                <div class="footer-column col-md-2 col-sm-12 col-xs-12">
+                            <div class="footer-widget links-widget">
+                                <h3 class="footer-title">Our Services</h3>
+                                <div class="widget-content">
+                                    <ul class="list">
+                                       <li><a href="IFRS-Technical-Advisory.html">IFRS Technical
+Advisory</a></li>
+                            <li><a href="Offshore-Audit-Support-Services.html">Offshore Audit
+Support Services</a></li>
+                            <li><a href="Offshore-Accounting-Services.html">Offshore
+Accounting Services</a></li>
+                            <li><a href="Internal-Audit.html">Internal Audit</a></li>
+                            <li><a href="Budgeting-Forcasting-And-Feasibility-studies.html">Budgeting, Forcasting
+And Feasibility studies</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                   
+                <div class="footer-column col-md-4 col-sm-12 col-xs-12">
+                       
+                            <div class="footer-widget contact-widget">
+                                <h3 class="footer-title">Contact us</h3>
+                                <div class="widget-content">
+                                    <ul class="contact-info">
+                                        <li><span class="icon-signs"></span>22/121 Apple Street, New York, <br>NY 10012, USA</li>
+                                        <li><span class="icon-phone-call"></span> Phone: +123-456-7890</li>
+                                        <li><span class="icon-e-mail-envelope"></span>Mail@Fortuneteam.com</li>
+                                    </ul>
+                                </div>
+                                <ul class="social">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+
+                     
+                </div>
+                
+             </div>
+         </div>
+     </div>-->
+     
+     
+     
+</footer>
+
+<!-- Scroll Top Button -->
+    <button class="scroll-top tran3s color2_bg">
+        <span class="fa fa-angle-up"></span>
+    </button>
+    <!-- pre loader  
+    <div class="preloader"></div>
+-->
+
+    <!-- jQuery js -->
+    <script src="js/jquery.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jQuery ui js -->
+    <script src="js/jquery-ui.js"></script>
+    <!-- owl carousel js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- jQuery validation -->
+    <script src="js/jquery.validate.min.js"></script>
+
+    <!-- mixit up -->
+    <script src="js/wow.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/menuzord.js"></script>
+
+    
+
+    <!-- fancy box -->
+    <script src="js/custom.js"></script>
+    <script src="js/header.js"></script>
+    <script >
+const slides = document.querySelectorAll('.slider');
+const slideContents = document.querySelectorAll('.slide-content');
+const slideImages = document.querySelectorAll('.slide-image');
+let currentSlide = 0;
+let slideInterval;
+
+// Show the first slide initially
+slides[currentSlide].classList.add('active');
+slideContents[currentSlide].style.opacity = '1';
+slideImages[currentSlide].style.opacity = '1';
+
+// Start the slide interval
+startSlideInterval();
+
+function startSlideInterval() {
+  slideInterval = setInterval(nextSlide, 3000);
+}
+
+function nextSlide() {
+  slides[currentSlide].classList.remove('active');
+  slideContents[currentSlide].style.opacity = '0';
+  slideImages[currentSlide].style.opacity = '0';
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add('active');
+  slideContents[currentSlide].style.opacity = '1';
+  slideImages[currentSlide].style.opacity = '1';
+}
+
+function prevSlide() {
+  slides[currentSlide].classList.remove('active');
+  slideContents[currentSlide].style.opacity = '0';
+  slideImages[currentSlide].style.opacity = '0';
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  slides[currentSlide].classList.add('active');
+  slideContents[currentSlide].style.opacity = '1';
+  slideImages[currentSlide].style.opacity = '1';
+}
+
+// Pause the slide interval on mouseenter
+for (let i = 0; i < slides.length; i++) {
+  slides[i].addEventListener('mouseenter', pauseSlideInterval);
+}
+
+// Resume the slide interval on mouseleave
+for (let i = 0; i < slides.length; i++) {
+  slides[i].addEventListener('mouseleave', startSlideInterval);
+}
+
+function pauseSlideInterval() {
+  clearInterval(slideInterval);
+}
+
+
+const sliderContainer = document.querySelector('.slider-container');
+let touchStartX = 0;
+let touchEndX = 0;
+
+sliderContainer.addEventListener('touchstart', handleTouchStart);
+sliderContainer.addEventListener('touchend', handleTouchEnd);
+
+function handleTouchStart(event) {
+  touchStartX = event.changedTouches[0].screenX;
+}
+
+function handleTouchEnd(event) {
+  touchEndX = event.changedTouches[0].screenX;
+  handleSwipe();
+}
+
+function handleSwipe() {
+  const swipeThreshold = 100; // Adjust the threshold value as desired
+
+  if (touchEndX - touchStartX > swipeThreshold) {
+    // Swiped right (previous slide)
+    prevSlide();
+  } else if (touchStartX - touchEndX > swipeThreshold) {
+    // Swiped left (next slide)
+    nextSlide();
+  }
+}
+
+
+
+  </script>
+
+</div>
+    
+</body>
+</html>
